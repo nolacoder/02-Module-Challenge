@@ -1,0 +1,144 @@
+:root {
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: slategray;
+}
+
+header h1 {
+    color: slategray;
+    background-color: aquamarine;
+    padding-left: 5%;
+}
+
+header nav {
+    padding: 2% 4%;
+    width: 45%;
+    flex: 0 1 38em;
+    font-size: 18px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: aquamarine;
+    padding: 6%;
+}
+
+.Background-Image {
+    background-image: ;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    background-color: teal;
+    width: 100%;
+    height: 20em;
+}
+
+.Background-Image p {
+    background-color: aquamarine;
+    color: slategray;
+    margin-right: 10%;
+    font-size: 40px;
+    flex: 0 1 8em;
+}
+
+.Infobox {
+    padding: 3%;
+    display: flex;
+}
+
+.Infobox h2 {
+    float: left;
+    height: 100%;
+    width: 25%;
+    text-align: right;
+    padding-right: 2%;
+    padding-left: 10%;
+    margin-top: 0%;
+    color: slategray;
+    font-size: 50px;
+}
+
+.Infobox > section {
+    border-left: 3px solid slategray;
+    padding: 2%;
+    width: 75%;
+}
+
+.Work {
+    height: 50em;
+}
+
+.Work > section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.Projectbox {
+    border: 5px solid aquamarine;
+    flex: 1 1 50%;
+    width: 50%;
+    height: 25%;
+}
+
+.Projectbox section {
+    width: 20%;
+    color: slategray;
+    background-color: aquamarine;
+}
+
+.Projectbig {
+    flex: 2 1 100%;
+    height: 50%;
+}
+
+.Project1 {
+    background: wheat;
+}
+
+.Project2 {
+    background: sandybrown;
+}
+
+.Project3 {
+    background: palegreen;
+}
+
+.Project4 {
+    background: palegoldenrod;
+}
+
+.Project5 {
+    background: palevioletred;
+}
+
+.Contact-Me {
+    height: 10%;
+}
+
+.Contact-Me section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Contact-Me nav {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 100%;
+    font-size: 18px;
+}
+
+.Contact-Me a {
+    color: slategray;
+    text-decoration: none;
+}
