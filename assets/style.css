@@ -163,7 +163,7 @@ header nav a:hover::before {
     width: 56%;
     color: var(--color1);
     background-color: var(--color2);
-    margin: 6em 0em 0em 0em;
+    margin: 6em 0em 0em 1em;
     padding: 0% 0% 0% 1%;
     position: absolute;
     bottom: 15%;
