@@ -36,6 +36,7 @@ header nav a {
     font-weight: bold;
 }
 
+/* Creating the line under the nav links */
 header nav a::before {
     content: '';
     background-color: var(--color2);
@@ -48,18 +49,20 @@ header nav a::before {
     transition: all .3s ease-in-out;
 }
 
+/* Instructing the link to change color when hovered */
 header nav a:hover {
     color: var(--color1);
     transition: all .3s ease-in-out;
     z-index: 0;
 }
 
+/* Telling the line under the link how high to rise upon hover */
 header nav a:hover::before {
     bottom: 25%;
     height: 45%;
 }
 
-
+/* Used a background image instead of an img element */
 .Background-Image {
     background-image: url(./img/Background.jpeg);
     display: flex;
@@ -92,11 +95,13 @@ header nav a:hover::before {
     padding: 1%;
 }
 
+/* All info boxes will share these property values */
 .Infobox {
     padding: 3%;
     display: flex;
 }
 
+/* All info box headers will be designed this way */
 .Infobox h2 {
     float: left;
     height: 100%;
@@ -109,6 +114,7 @@ header nav a:hover::before {
     font-size: 50px;
 }
 
+/* The sections directly under the infobox containers will be designed this way */
 .Infobox > section {
     border-left: 3px solid var(--color1);
     padding: 2%;
@@ -116,11 +122,13 @@ header nav a:hover::before {
     padding: 0% 2%;
 }
 
+/* The About Me info box p element gets special CSS */
 .About-Me p {
     font-size: 20px;
     line-height: 1.5;
 }
 
+/* Work is the mostimportant info box and will get special CSS */
 .Work {
     height: 80em;
 }
@@ -131,6 +139,7 @@ header nav a:hover::before {
     flex-direction: row;
 }
 
+/* The project boxes will share these styles. Note the saturation property. This builds to the next selector below */
 .Projectbox {
     border: 5px solid var(--color2);
     flex: 0 1 48%;
@@ -141,6 +150,7 @@ header nav a:hover::before {
     filter: saturate(75%);
 }
 
+/* Finishes the saturation effect upon hover */
 .Projectbox:hover {
     filter: saturate(100%);
 }
@@ -167,6 +177,7 @@ header nav a:hover::before {
     width: 25%;
 }
 
+/* Each project box gets a unique image */
 .Project1 {
     background-image: url(./img/Horiseon\ refactor.png);
 }
@@ -210,6 +221,7 @@ header nav a:hover::before {
     position: relative;
 }
 
+/* This begins the link hover effect seen in the header nav element. Colors are inversed here. */
 .Contact-Me a::before {
     content: '';
     background-color: var(--color1);
