@@ -8,9 +8,6 @@ In order to showcase my work to potential employers, I need a website. This webs
 
 In order to access this webpage, use the following link: https://nolacoder.github.io/02-Module-Challenge/
 
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+Here you will find many CSS features such as a hover effect on the nav links at the top and bottom of the screen. The project boxes feature a saturation hover effect. Link are included the deployed projects. 
 
 !["Screenshot of webpage"](assets/img/Website%20Screenshot.png)
