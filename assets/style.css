@@ -144,14 +144,19 @@ header nav a:hover::before {
     flex: 0 1 48%;
     height: 20%;
     margin: 1%;
-    background-size: cover;
-    background-position: top;
     filter: saturate(75%);
+    position: relative;
 }
 
 /* Finishes the saturation effect upon hover */
 .Projectbox:hover {
     filter: saturate(100%);
+}
+
+/* All class Projectbox images will share this CSS */
+.Projectbox img {
+    height: 100%;
+    width: 100%;
 }
 
 .Projectbox section {
@@ -160,6 +165,8 @@ header nav a:hover::before {
     background-color: var(--color2);
     margin: 6em 0em 0em 0em;
     padding: 0% 0% 0% 1%;
+    position: absolute;
+    bottom: 15%;
 }
 
 .Projectbox h3 {
@@ -173,32 +180,14 @@ header nav a:hover::before {
 .Projectbig {
     flex: 0 1 100%;
     height: 50%;
+    position: relative;
 }
 
 .Projectbig section {
     margin: 28em 0em 3em 1em;
     width: 36%;
-}
-
-/* Each project box gets a unique image */
-.Project1 {
-    background-image: url(./img/Horiseon\ refactor.png);
-}
-
-.Project2 {
-    background-image: url(./img/Study\ guide.png);
-}
-
-.Project3 {
-    background-image: url(https://placehold.jp/300x300.png);
-}
-
-.Project4 {
-    background-image: url(https://placehold.jp/300x300.png);
-}
-
-.Project5 {
-    background-image: url(https://placehold.jp/300x300.png);
+    position: absolute;
+    bottom: 7%;
 }
 
 .Contact-Me {
