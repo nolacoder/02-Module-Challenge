@@ -107,7 +107,6 @@ header nav a:hover::before {
     width: 25%;
     text-align: right;
     padding-right: 2%;
-    padding-left: 10%;
     margin-top: 0%;
     color: var(--color1);
     font-size: 50px;
@@ -226,12 +225,14 @@ header nav a:hover::before {
     transition: all .3s ease-in-out;
 }
 
+/* Continues the link hover effect*/
 .Contact-Me a:hover {
     color: var(--color2);
     transition: all .3s ease-in-out;
     z-index: 0;
 }
 
+/* Completes the link hover effect*/
 .Contact-Me a:hover::before {
     height: 170%;
 }
