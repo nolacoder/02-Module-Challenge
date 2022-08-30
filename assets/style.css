@@ -1,5 +1,6 @@
 :root {
-
+    --color1: #2b2b3b;
+    --color2: #84e1e1;
 }
 
 * {
@@ -10,44 +11,85 @@ header {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background: slategray;
+    background: var(--color1);
 }
 
 header h1 {
-    color: slategray;
-    background-color: aquamarine;
-    padding-left: 5%;
+    color: var(--color1);
+    background-color: var(--color2);
+    padding: .5% .5% .5% 5%;
 }
 
 header nav {
-    padding: 2% 4%;
+    padding: 2% 3%;
     width: 45%;
     flex: 0 1 38em;
     font-size: 18px;
+    z-index: 1;
 }
 
 header nav a {
     text-decoration: none;
-    color: aquamarine;
+    color: var(--color2);
     padding: 6%;
+    position: relative;
+    font-weight: bold;
 }
 
+header nav a::before {
+    content: '';
+    background-color: var(--color2);
+    position: absolute;
+    left: 10%;
+    bottom: 25%;
+    width: 80%;
+    height: 4px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+header nav a:hover {
+    color: var(--color1);
+    transition: all .3s ease-in-out;
+    z-index: 0;
+}
+
+header nav a:hover::before {
+    bottom: 25%;
+    height: 45%;
+}
+
+
 .Background-Image {
-    background-image: ;
+    background-image: url(./img/Background.jpeg);
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: flex-end;
-    background-color: teal;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 20em;
 }
 
+.Background-Image section {
+    height: 1em;
+}
+
+
+.Background-Image img {
+    height: 85%;
+    margin-right: 63em;
+    margin-left: 5em;
+}
+
 .Background-Image p {
-    background-color: aquamarine;
-    color: slategray;
+    background-color: var(--color2);
+    background-size: 1000px;
+    color: var(--color1);
     margin-right: 10%;
     font-size: 40px;
     flex: 0 1 8em;
+    padding: 1%;
 }
 
 .Infobox {
@@ -63,18 +105,24 @@ header nav a {
     padding-right: 2%;
     padding-left: 10%;
     margin-top: 0%;
-    color: slategray;
+    color: var(--color1);
     font-size: 50px;
 }
 
 .Infobox > section {
-    border-left: 3px solid slategray;
+    border-left: 3px solid var(--color1);
     padding: 2%;
     width: 75%;
+    padding: 0% 2%;
+}
+
+.About-Me p {
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 .Work {
-    height: 50em;
+    height: 80em;
 }
 
 .Work > section {
@@ -84,41 +132,58 @@ header nav a {
 }
 
 .Projectbox {
-    border: 5px solid aquamarine;
-    flex: 1 1 50%;
-    width: 50%;
-    height: 25%;
+    border: 5px solid var(--color2);
+    flex: 0 1 48%;
+    height: 20%;
+    margin: 1%;
+    background-size: cover;
+    background-position: top;
+    filter: saturate(75%);
+}
+
+.Projectbox:hover {
+    filter: saturate(100%);
 }
 
 .Projectbox section {
-    width: 20%;
-    color: slategray;
-    background-color: aquamarine;
+    width: 50%;
+    color: var(--color1);
+    background-color: var(--color2);
+    margin: 9em 0em 0em 0em;
+    padding: 0% 0% 0% 1%;
+}
+
+.Projectbox h3 {
 }
 
 .Projectbig {
-    flex: 2 1 100%;
+    flex: 0 1 100%;
     height: 50%;
 }
 
+.Projectbig section {
+    margin: 28em 0em 3em 1em;
+    width: 25%;
+}
+
 .Project1 {
-    background: wheat;
+    background-image: url(./img/Horiseon\ refactor.png);
 }
 
 .Project2 {
-    background: sandybrown;
+    background-image: url(./img/Study\ guide.png);
 }
 
 .Project3 {
-    background: palegreen;
+    background-image: url(https://placehold.jp/300x300.png);
 }
 
 .Project4 {
-    background: palegoldenrod;
+    background-image: url(https://placehold.jp/300x300.png);
 }
 
 .Project5 {
-    background: palevioletred;
+    background-image: url(https://placehold.jp/300x300.png);
 }
 
 .Contact-Me {
@@ -139,6 +204,29 @@ header nav a {
 }
 
 .Contact-Me a {
-    color: slategray;
+    color: var(--color1);
     text-decoration: none;
+    position: relative;
+}
+
+.Contact-Me a::before {
+    content: '';
+    background-color: var(--color1);
+    position: absolute;
+    right: -7%;
+    bottom: -40%;
+    width: 114%;
+    height: 4px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+.Contact-Me a:hover {
+    color: var(--color2);
+    transition: all .3s ease-in-out;
+    z-index: 0;
+}
+
+.Contact-Me a:hover::before {
+    height: 170%;
 }
