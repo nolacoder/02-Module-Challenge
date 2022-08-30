@@ -156,11 +156,15 @@ header nav a:hover::before {
 }
 
 .Projectbox section {
-    width: 50%;
+    width: 56%;
     color: var(--color1);
     background-color: var(--color2);
-    margin: 9em 0em 0em 0em;
+    margin: 6em 0em 0em 0em;
     padding: 0% 0% 0% 1%;
+}
+
+.Projectbox h3 {
+    font-size: 30px;
 }
 
 .Projectbox a {
@@ -174,7 +178,7 @@ header nav a:hover::before {
 
 .Projectbig section {
     margin: 28em 0em 3em 1em;
-    width: 25%;
+    width: 36%;
 }
 
 /* Each project box gets a unique image */
