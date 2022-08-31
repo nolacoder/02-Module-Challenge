@@ -8,7 +8,7 @@
 }
 
 header {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background: var(--color1);
@@ -64,7 +64,7 @@ header nav a:hover::before {
 
 /* Used a background image instead of an img element */
 .Background-Image {
-    background-image: url(./img/Background.jpeg);
+    background-image: url(./img/Sunrise.jpeg);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
