@@ -178,7 +178,7 @@ header nav a:hover::before {
 
 .Projectbig {
     flex: 0 1 100%;
-    height: 50%;
+    height: 57%;
     position: relative;
 }
 
@@ -236,3 +236,5 @@ header nav a:hover::before {
 .Contact-Me a:hover::before {
     height: 170%;
 }
+
+
