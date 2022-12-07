@@ -6,7 +6,7 @@ In order to showcase my work to potential employers, I need a website. This webs
 
 ## Usage
 
-In order to access this webpage, use the following link: https://nolacoder.github.io/02-Module-Challenge/
+In order to access this webpage, use the following link: https://nolacoder.github.io/Jared-Johnson-Portfolio/
 
 Here you will find many CSS features such as a hover effect on the nav links at the top and bottom of the screen. The project boxes feature a saturation hover effect. The project boxes are also fuly clicble, leading you to those deployed project webpages. 
 
